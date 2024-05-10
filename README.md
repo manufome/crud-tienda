@@ -222,13 +222,13 @@ VALUES
 (3, 4, 3, '2023-04-03');
 
 -- Inserts para la tabla de ítems de órdenes
-INSERT INTO orden_items (id_orden, id_item, id_producto, cantidad, precio_unitario)
+INSERT INTO orden_items (id_orden, id_producto, cantidad, precio_unitario)
 VALUES
-(1, 1, 1, 10, 50.00),
-(1, 2, 2, 5, 30.00),
-(2, 1, 3, 8, 25.00),
-(3, 1, 1, 12, 40.00),
-(3, 2, 2, 6, 35.00);
+(1, 1, 10, 50.00),
+(1, 2, 5, 30.00),
+(2, 3, 8, 25.00),
+(3, 1, 12, 40.00),
+(3, 2, 6, 35.00);
 
 
 ```
