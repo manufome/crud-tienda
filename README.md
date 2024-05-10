@@ -1,6 +1,7 @@
 Inserts
 
 ```
+
 INSERT INTO categorias_productos (nombre_categoria) 
 VALUES 
 ('Arepas'),
@@ -205,19 +206,12 @@ VALUES
 ('clienteB', 'passwordB', 2),
 ('clienteC', 'passwordC', 2);
 
--- Inserts para la tabla de contactos
-INSERT INTO contactos (nombre_contacto, apellido_contacto, correo, telefono, id_cliente) 
-VALUES
-('Contacto 1', 'Cliente A', 'contacto1@clienteA.com', '111-111-1111', 1),
-('Contacto 2', 'Cliente B', 'contacto2@clienteB.com', '222-222-2222', 2),
-('Contacto 3', 'Cliente C', 'contacto3@clienteC.com', '333-333-3333', 3);
-
 -- Inserts para la tabla de estado_orden
 INSERT INTO estado_orden (nombre_estado_orden)
 VALUES
 ('en proceso'),
 ('enviado'),
-('entregado')
+('entregado'),
 ('cancelado');
 
 -- Inserts para la tabla de órdenes
@@ -228,12 +222,13 @@ VALUES
 (3, 4, 3, '2023-04-03');
 
 -- Inserts para la tabla de ítems de órdenes
-INSERT INTO items_ordenes (id_orden, id_item, id_producto, cantidad, precio_unitario)
+INSERT INTO orden_items (id_orden, id_item, id_producto, cantidad, precio_unitario)
 VALUES
 (1, 1, 1, 10, 50.00),
 (1, 2, 2, 5, 30.00),
 (2, 1, 3, 8, 25.00),
 (3, 1, 1, 12, 40.00),
 (3, 2, 2, 6, 35.00);
+
 
 ```
